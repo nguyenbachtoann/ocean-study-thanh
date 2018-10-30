@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/header2"
+                android:orientation="vertical">
+
+            </LinearLayout>
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:src="@drawable/relax_header"
+                app:layout_constraintBottom_toBottomOf="@+id/layoutHeader"
+                app:layout_constraintRight_toLeftOf="@+id/layoutHeader"
+                app:layout_constraintLeft_toRightOf="@+id/layoutHeader"
+                />
+            <LinearLayout
+                android:id="@+id/layoutBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/body"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/layoutHeader"
+                android:paddingTop="150dp">
+
+
+
+                    <!--<Button-->
+                        <!--android:id="@+id/fish1"-->
+                        <!--android:layout_width="100dp"-->
+                        <!--android:layout_height="100dp"-->
+                        <!--android:background="@drawable/cartoon"-->
+                        <!--app:layout_constraintRight_toRightOf="parent"-->
+                        <!--android:onClick="showFishInfo"/>-->
+                    <!--<Button-->
+                        <!--android:id="@+id/fish2"-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="70dp"-->
+                        <!--android:background="@drawable/cartoon2"-->
+                        <!--app:layout_constraintRight_toRightOf="parent"-->
+                        <!--app:layout_constraintTop_toBottomOf="@id/fish1"-->
+                        <!--android:layout_marginTop="100dp"-->
+                        <!--android:onClick="showFishInfo"/>-->
+                    <!--<Button-->
+                        <!--android:id="@+id/fish3"-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="70dp"-->
+                        <!--android:background="@drawable/cartoon"-->
+                        <!--app:layout_constraintRight_toRightOf="parent"-->
+                        <!--app:layout_constraintTop_toBottomOf="@id/fish2"-->
+                        <!--android:layout_marginTop="100dp"-->
+                        <!--android:onClick="showFishInfo"/>-->
+                    <!--<Button-->
+                        <!--android:id="@+id/fish4"-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="70dp"-->
+                        <!--android:background="@drawable/cartoon2"-->
+                        <!--app:layout_constraintRight_toRightOf="parent"-->
+                        <!--app:layout_constraintTop_toBottomOf="@id/fish3"-->
+                        <!--android:layout_marginTop="100dp"-->
+                        <!--android:onClick="showFishInfo"/>-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/fish5"-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="70dp"-->
+                        <!--android:background="@drawable/cartoon"-->
+                        <!--app:layout_constraintRight_toRightOf="parent"-->
+                        <!--app:layout_constraintTop_toBottomOf="@id/fish4"-->
+                        <!--android:layout_marginTop="100dp"-->
+                        <!--android:onClick="showFishInfo"/>-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/fish6"-->
+                        <!--android:layout_width="70dp"-->
+                        <!--android:layout_height="70dp"-->
+                        <!--android:background="@drawable/cartoon2"-->
+                        <!--app:layout_constraintRight_toRightOf="parent"-->
+                        <!--app:layout_constraintTop_toBottomOf="@id/fish5"-->
+                        <!--android:layout_marginTop="100dp"-->
+                        <!--android:onClick="showFishInfo"/>-->
+                <ImageView
+                    android:id="@+id/bubble1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_image2vector"/>
+
+                <ImageView
+                    android:id="@+id/bubble2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_image2vector"/>
+                <ImageView
+                    android:id="@+id/bubble3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_image2vector"/>
+                </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

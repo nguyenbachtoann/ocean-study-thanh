@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/footer"
+        android:scaleX="1.4">
+
+        <ImageView
+            android:id="@+id/fish_home_1"
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:src="@drawable/cartoon"/>
+
+        <ImageView
+            android:id="@+id/fish_home_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cartoon2"/>
+
+        <ImageView
+            android:id="@+id/fish_home_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/cartoon2"/>
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            android:text="Bắt đầu"
+            android:textStyle="bold"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:onClick="changeToStart"/>
+
+
+
+        <ImageView
+            android:id="@+id/bubble1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/ic_image2vector"/>
+
+        <ImageView
+            android:id="@+id/bubble2"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:background="@drawable/ic_image2vector"/>
+        <ImageView
+            android:id="@+id/bubble3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_image2vector"/>
+        <ImageView
+            android:id="@+id/bubble4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_image2vector"/>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</LinearLayout>
